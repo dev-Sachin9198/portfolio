@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sachinl Yadav | Web Developer & JavaScript Developer portfolio.">
+  <meta name="keywords" content="Sachin Yadav, Web Developer, JavaScript Developer, Frontend Developer, Full Stack Developer">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://your-domain.com/">
+  <meta property="og:title" content="Sachin Yadav | Web Developer & JavaScript Developer">
+  <meta property="og:description" content="Modern developer portfolio showcasing skills, projects, experience and coding profiles.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Sachin Yadav | Web Developer & JavaScript Developer</title>
+</head>
+<body>
+  <div id="loader" class="loader"><div class="loader-ring"></div><span>Loading portfolio...</span></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-dot" id="cursorDot"></div><div class="cursor-ring" id="cursorRing"></div>
+
+  <header class="navbar" id="navbar">
+    <a class="logo" href="#home">SACHIN YADAV</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link active">Home</a><a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a><a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a><a href="#services" class="nav-link">Services</a>
+      <a href="#education" class="nav-link">Education</a><a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div><div class="blob blob-a"></div><div class="blob blob-b"></div>
+      <div class="particles" id="particles"></div>
+      <div class="container hero-content">
+        <div class="hero-copy reveal">
+          <!-- <span class="availability"><span></span> Available for Internship & Freelance</span> -->
+          <h1>Hi, I'm <span>SACHIN YADAV</span></h1>
+          <h2>I'm a <span id="typing"></span><b class="caret">|</b></h2>
+          <p class="hero-text">I build modern, responsive and interactive web applications with clean code and great user experiences.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-secondary" href="assets/resume.pdf" download>Download Resume <i class="fa-solid fa-download"></i></a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+          <div class="social-row" id="heroSocial"></div>
+        </div>
+        <div class="hero-visual reveal reveal-right">
+          <div class="profile-wrap">
+            <div class="profile-ring"></div><div class="profile-ring ring-2"></div>
+            <div class="profile-card">
+              <img src="assets/profile.jpg" alt="Sachin Yadav profile photo" loading="eager">
+              <div class="profile-status"><span></span> Building the web</div>
+            </div>
+            <span class="float-badge b1">HTML</span><span class="float-badge b2">CSS</span>
+            <span class="float-badge b3">JS</span><span class="float-badge b4">Node.js</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">ABOUT ME</p><h2>Turning ideas into <span>digital experiences.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-image reveal reveal-left"><img src="assets/profile.jpg" alt="Sachin Yadav" loading="lazy"></div>
+        <div class="about-copy reveal"><p>I’m a passionate developer focused on creating clean, responsive and useful web experiences. I enjoy solving problems, learning new technologies and turning concepts into working products.</p><p>My goal is to grow as a software developer while building projects that are practical, accessible and enjoyable to use.</p>
+          <div class="stats-grid" id="stats"></div>
+        </div>
+      </div>
+    </div></section>
+
+    <section class="section section-alt" id="skills"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">MY TOOLBOX</p><h2>Skills & <span>technologies.</span></h2></div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div></section>
+
+    <section class="section" id="projects"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">SELECTED WORK</p><h2>Projects that <span>solve problems.</span></h2></div>
+      <div class="filter-bar" id="projectFilters"></div><div class="projects-grid" id="projectsGrid"></div>
+    </div></section>
+
+    <section class="section section-alt" id="experience"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">JOURNEY</p><h2>Experience & <span>growth.</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="timeline-dot"></span><p class="timeline-date">2026</p><h3>Web Developer</h3><p>Building full-featured web projects and strengthening frontend, backend and deployment skills.</p></article>
+        <article class="timeline-item reveal"><span class="timeline-dot"></span><p class="timeline-date">2025</p><h3>Frontend Developer Intern</h3><p>Worked on responsive interfaces, reusable components and JavaScript interactions.</p></article>
+        <article class="timeline-item reveal"><span class="timeline-dot"></span><p class="timeline-date">2025</p><h3>Started Web Development</h3><p>Began the journey with HTML, CSS and JavaScript and progressed toward full-stack development.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section" id="services"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">WHAT I DO</p><h2>Services for <span>modern products.</span></h2></div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </div></section>
+
+    <section class="section section-alt" id="education"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">EDUCATION</p><h2>Learning with <span>purpose.</span></h2></div>
+      <div class="education-card reveal"><div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div><div><span class="timeline-date">Diploma</span><h3>Diploma in Information Technology</h3><h4>Government Polytechnic Mirzapur</h4><p>Relevant areas: Web Development, Programming, Database Systems, Software Engineering and Computer Networks.</p></div><strong>2024–2027</strong></div>
+    </div></section>
+
+    <section class="section" id="coding"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">CODE. LEARN. BUILD.</p><h2>Coding <span>profiles.</span></h2></div>
+      <div class="coding-grid" id="codingGrid"></div>
+    </div></section>
+
+    <section class="section section-alt" id="achievements"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">MILESTONES</p><h2>Achievements & <span>certificates.</span></h2></div>
+      <div class="achievement-grid" id="achievementGrid"></div>
+      <div class="cert-grid">
+        <article class="cert-card reveal"><img src="assets/certificate-1.jpg" alt="Certificate placeholder" loading="lazy"><div><h3>Web Development Certification</h3><p>Issuing Organization · 2026</p><button class="text-btn cert-btn" data-image="assets/certificate-1.jpg">View Certificate <i class="fa-solid fa-expand"></i></button></div></article>
+      </div>
+    </div></section>
+
+    <section class="section" id="github"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">OPEN SOURCE</p><h2>GitHub <span>activity.</span></h2></div>
+      <div class="github-card reveal"><div><div class="github-top"><i class="fa-brands fa-github"></i><div><h3>github.com/yourusername</h3><p>Latest repositories & contribution activity</p></div></div><div class="github-metrics"><span><b>20+</b> Repositories</span><span><b>100+</b> Followers</span><span><b>500+</b> Contributions</span></div></div><a class="btn btn-secondary" data-social="github" href="#" target="_blank" rel="noopener">Open GitHub</a></div>
+      <div class="contribution-grid reveal" id="contributionGrid"></div>
+    </div></section>
+
+    <section class="section section-alt" id="testimonials"><div class="container">
+      <div class="section-heading reveal"><p class="eyebrow">KIND WORDS</p><h2>What people <span>say.</span></h2></div>
+      <div class="testimonial-wrap reveal"><button class="slider-btn" id="prevTest" aria-label="Previous testimonial">‹</button><div class="testimonial-card" id="testimonialCard"></div><button class="slider-btn" id="nextTest" aria-label="Next testimonial">›</button></div><div class="dots" id="testimonialDots"></div>
+    </div></section>
+
+    <section class="section contact-section" id="contact"><div class="container">
+      <div class="contact-grid"><div class="contact-copy reveal"><p class="eyebrow">GET IN TOUCH</p><h2>Let's build something <span>amazing together.</span></h2><p>Have a project, internship opportunity or collaboration in mind? Send a message and let's talk.</p>
+        <div class="contact-info"><a href="mailto:your@email.com"><i class="fa-solid fa-envelope"></i><span>your@email.com</span></a><a href="tel:+910000000000"><i class="fa-solid fa-phone"></i><span>+91 XXXXX XXXXX</span></a><div><i class="fa-solid fa-location-dot"></i><span>India</span></div></div>
+      </div>
+      <form class="contact-form glass-card reveal" id="contactForm"><label>Name<input id="name" name="name" required placeholder="Your name"></label><label>Email<input id="email" name="email" type="email" required placeholder="you@example.com"></label><label>Subject<input id="subject" name="subject" required placeholder="Project / opportunity"></label><label>Message<textarea id="message" name="message" rows="5" required placeholder="Tell me about your idea..."></textarea></label><button class="btn btn-primary" type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button><p id="formMessage" class="form-message"></p></form></div>
+    </div></section>
+  </main>
+
+  <footer><div class="container footer-main"><a class="logo" href="#home">&lt;SACHIN /&gt;</a><p>© 2026 Sachin Yadav. All Rights Reserved.</p><div class="footer-links"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div><div class="footer-social" id="footerSocial"></div></div><div class="footer-bottom">Made with <span>❤️</span> and JavaScript</div></footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast" id="toast"></div>
+  <div class="modal" id="projectModal" aria-hidden="true"><div class="modal-box"><button class="modal-close" data-close="projectModal">×</button><img id="modalImage" alt=""><p class="eyebrow">PROJECT DETAILS</p><h2 id="modalTitle"></h2><p id="modalDescription"></p><div id="modalFeatures"></div><div id="modalTags" class="tag-list"></div><div class="modal-actions"><a id="modalGithub" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a><a id="modalLive" class="btn btn-primary" target="_blank" rel="noopener">Live Demo</a></div></div></div>
+  <div class="modal" id="certificateModal" aria-hidden="true"><div class="modal-box certificate-modal"><button class="modal-close" data-close="certificateModal">×</button><img id="certificateImage" alt="Certificate"></div></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
